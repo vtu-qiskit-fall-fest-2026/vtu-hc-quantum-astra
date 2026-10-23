@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Cyan to Violet Gradient for Logo Rings -->
+    <linearGradient id="cyanViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <!-- Violet to Magenta Gradient -->
+    <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Text Metallic Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- Astra Accent Gradient -->
+    <linearGradient id="astraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="160" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Quantum Orbital Emblem -->
+  <g transform="translate(85, 80)">
+    <!-- Outer Quantum Ring 1 -->
+    <ellipse cx="0" cy="0" rx="55" ry="22" fill="none" stroke="url(#cyanViolet)" stroke-width="2" stroke-dasharray="7 3" transform="rotate(-30)" filter="url(#glow)" opacity="0.85" />
+    <!-- Outer Quantum Ring 2 -->
+    <ellipse cx="0" cy="0" rx="55" ry="22" fill="none" stroke="url(#astraGrad)" stroke-width="2" transform="rotate(30)" opacity="0.85" />
+    <!-- Horizontal Orbital Ring 3 -->
+    <ellipse cx="0" cy="0" rx="55" ry="18" fill="none" stroke="#00F2FE" stroke-width="1.5" transform="rotate(90)" opacity="0.6" />
+
+    <!-- Quantum State Nodes -->
+    <circle cx="44" cy="-24" r="4.5" fill="#00F2FE" filter="url(#glow)" />
+    <circle cx="-42" cy="26" r="4" fill="#C084FC" filter="url(#glow)" />
+    <circle cx="0" cy="-52" r="3.5" fill="#38BDF8" />
+
+    <!-- Core Nucleus (Astra Star) -->
+    <circle cx="0" cy="0" r="12" fill="#0F172A" stroke="#8B5CF6" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="7" fill="#00F2FE" filter="url(#glow)" />
+    <path d="M 0,-10 L 2.5,-3 L 10,0 L 2.5,3 L 0,10 L -2.5,3 L -10,0 L -2.5,-3 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(175, 74)">
+    <!-- Title: QUANTUM -->
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="3" fill="url(#textGrad)">
+      QUANTUM
+    </text>
+
+    <!-- Title: ASTRA -->
+    <text x="195" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="4" fill="url(#astraGrad)" filter="url(#glow)">
+      ASTRA
+    </text>
+
+    <!-- Tagline & Hackathon Label -->
+    <text x="3" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="2" fill="#94A3B8">
+      EXPLORE THE QUANTUM WORLD
+    </text>
+    <text x="3" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="1" fill="#64748B">
+      VTU–Qiskit Fall Fest 2026 • Offline Grover Search Lab • VTU-QFF-HC-0008
+    </text>
+  </g>
+
+  <!-- Subtle Quantum Dot Constellation Details -->
+  <circle cx="560" cy="30" r="1.5" fill="#38BDF8" opacity="0.6" />
+  <circle cx="540" cy="50" r="1" fill="#818CF8" opacity="0.4" />
+  <circle cx="575" cy="70" r="1.5" fill="#C084FC" opacity="0.7" />
+  <circle cx="550" cy="130" r="1" fill="#00F2FE" opacity="0.5" />
+</svg>
