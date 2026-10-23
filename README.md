@@ -215,3 +215,16 @@ python run_tests.py
 ## 13. License & Acknowledgments
 Developed by **Sagar Zingade** and **Abhilash** for **VTU–Qiskit Fall Fest 2026** (Project ID: `VTU-QFF-HC-0008`).  
 Built with [Qiskit](https://qiskit.org/) and [Streamlit](https://streamlit.io/).
+
+---
+
+## 🎥 Project Demo Video
+
+**Project:** Quantum Astra  
+**Team ID:** VTU-QFF-HC-0008
+
+▶️ [Watch the Demo Video on YouTube](https://youtu.be/p92FF1HiGME?si=dctHeeCPM6XOI9Vm)
+
+## 📊 Project Presentation
+
+📥 [Download the PowerPoint Presentation](./VTU-QFF-HC-0008.pptx)
